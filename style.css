@@ -751,6 +751,9 @@ h1{
         padding-top: 120px;
         text-align: center;
     }
+    .main-text {
+        align-items: center;
+    }
     .body_text_br {
         padding-left: 100px;
     }
@@ -854,7 +857,7 @@ h1{
         font-size: 19px;
         line-height: 20px;
     }
-    .main__block__button {
+    .service__button {
         min-height: 50px;
         padding: 1px 70px;
         font-size: 18px;
