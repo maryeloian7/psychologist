@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
             <main class="content">
-                <div class="main-block__container stacked-radial ">  
+                <div class="main-block__container stacked-radial">  
                     <div class="main-block  _container stacked-radials">
                         <div class="foto">
                             <img src="./img/IMG_1.png" alt="img" class="main-img">
@@ -22,8 +22,8 @@
                             <p class="text2">Меня зовут</p>
                             <h1><spen class="ls">Анна</spen><br><spen class="surname">Иларьевна</spen></h1>
                             <div class="main__button _main__button">
-                                <button class="main__block__button _block__button">
-                                    <a href="">Записаться</a>
+                                <button data-modal class="main__block__button _block__button">
+                                    Записаться
                                 </button>
                             </div>
                         </div> 
@@ -191,8 +191,8 @@
                                     <p class="service_text">От 1 до 2 часов</p>
                                     <p class="service_price">50 €</p>
                                     <div class="service__button ">
-                                        <button class="service__button main__block__button">
-                                            <a href="">Записаться</a>
+                                        <button data-modal  class="service__button main__block__button">
+                                            Записаться
                                         </button>
                                     </div>
                             </bottom>
@@ -203,8 +203,8 @@
                                     <p class="service_text">Неделя (30 мин. в день)</p>
                                     <p class="service_price">70 €</p>
                                     <div class="service__button ">
-                                        <button class="service__button main__block__button">
-                                            <a href="">Записаться</a>
+                                        <button data-modal  class="service__button main__block__button">
+                                            Записаться
                                         </button>
                                     </div>
                             </bottom>
@@ -219,8 +219,8 @@
                                 </p>
                                 <p class="service_price">350 €</p>
                                 <div class="service__button ">
-                                    <button class="service__button main__block__button">
-                                        <a href="">Записаться</a>
+                                    <button data-modal  class="service__button main__block__button">
+                                        Записаться
                                     </button>
                                 </div>
                             </bottom>
@@ -240,6 +240,23 @@
             </div>
         </footer>
     </div>
-
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">
+                        Если вы хотите записаться, заполните форму обратной связи, и мы подберем удобное для вас время.
+                    </div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Откуда вы?" name="Where are you from?" type="Where are you from?" class="modal__input">
+                    <input required placeholder="Номер телефона и удобный мессенджер" name="phone" type="phone" class="modal__input">
+                    <textarea required placeholder="Кратко опишите свой запрос" name="your request" type="your request" class="modal__input __textarea_request"></textarea>
+                    <button class="btn btn_dark btn_min">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
