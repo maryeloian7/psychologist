@@ -541,7 +541,7 @@ h1{
     padding:40px;
     background-color:rgba(255, 255, 255, 0.911);border:1px solid rgba(247, 247, 247, 0.2);
     border-radius:7px;
-    max-height:80vh;
+    max-height:90vh;
     overflow-y:auto
 }
 .modal__close{
@@ -610,13 +610,17 @@ h1{
     cursor:pointer;
     transition:.3s all;
     outline:0;
-    color: #323542;
+    color: rgba(50, 53, 66, 0.65);
 }
 .btn_min{
     height:50px
 }
 .btn:hover{
     box-shadow:0 4px 30px rgba(0, 0, 0, 0.266)
+}
+.option__input{
+    font-family: 'Montserrat';
+    color: rgba(50, 53, 66, 0.65);
 }
 
 /* ------------------------------------------------------------- */
@@ -901,6 +905,9 @@ h1{
     .why_me{
         margin-bottom: 90px;
     }
+    .how_i_work_title{
+        margin-top: 150px;
+    }
     .how_i_work_inf {
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -957,17 +964,22 @@ h1{
     }
 
     .service_title_inform {
-        font-size: 40px;
+        font-size: 34px;
     }
     .service_text {
-        font-size: 19px;
+        font-size: 15px;
         line-height: 20px;
+        padding: 0 7px;
+    }
+    .service_price{
+        font-size: 15px;
     }
     .service__button {
-        min-height: 50px;
-        padding: 1px 70px;
-        font-size: 18px;
-        margin-bottom: 9px;
+        min-height: 45px;
+        padding: 1px 65px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #323542;
     }
     .footer__contacts {
         flex-wrap: wrap;
@@ -981,6 +993,40 @@ h1{
     }
     .cases_cases{
         margin-bottom: 50px;
+    }
+
+    .modal__dialog{
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    .modal__content{
+        padding: 20px;
+    }
+    .modal__close{
+
+    }
+    .modal__title{
+        font-size: 20px;
+       line-height: 30px;
+    }
+    .modal__input{
+        width: 350px;
+        height: 45px;
+        font-size: 14px;
+        margin: 15px auto 15px auto;
+    }
+    .btn_min {
+        height: 35px;
+    }
+    .modal .btn {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .btn{
+        font-size: 17px;
+
     }
 
 }
