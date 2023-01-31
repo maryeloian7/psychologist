@@ -1,14 +1,12 @@
-// "use strict"
 
-window.addEventListener('DOMContentLoaded', function() {
+function forms () {
 
-    // modal
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
-        modal = document.querySelector('.modal');
+    modal = document.querySelector('.modal');
 
 
-     modalTrigger.forEach(btn => {
+    modalTrigger.forEach(btn => {
         btn.addEventListener('click', openModal);
     });
 
@@ -37,54 +35,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-    //Tabs
-
-    const tabs= document.querySelectorAll('.cases_item'),
-          tabsContent = document.querySelectorAll('.cases_text'),
-          tabsParent = document.querySelector('.cases_cases');
-
-          
-    function hideTabContent() {
-        tabsContent.forEach(item => {
-            item.classList.add('hide');
-            item.classList.remove('show', 'fade');
-        });
-        tabs.forEach(item => {
-            item.classList.remove('_item_active');
-        });
-    }
-    function showTabContent(i = 0) {
-        tabsContent[i].classList.add('show', 'fade');
-        tabsContent[i].classList.remove('hide');
-        tabs[i].classList.add('_item_active');
-    }
-    
-    hideTabContent();
-    showTabContent();
-
-    tabsParent.addEventListener('click', function(event) {
-		const target = event.target;
-		if(target && target.classList.contains('cases_item')) {
-            tabs.forEach((item, i) => {
-                if (target == item) {
-                    hideTabContent();
-                    showTabContent(i);
-                }
-            });
-		}
-    });
-
-
-
-
-
-
-
-    
-
-    // FORMS
-
-    
+  //      
     const forms = document.querySelectorAll('form');
     const message = {
         loading: './img/spinner.svg',
@@ -157,6 +108,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 4000);
     }
 
+}
 
-
-});
+export default forms;

@@ -492,15 +492,15 @@ h1{
 
 
 .contacts-footer__item__phone{
-    background: url(./img/Vector.svg) 0 0 no-repeat;
+    background: url(../img/Vector.svg) 0 0 no-repeat;
 
 }
 .contacts-footer__item__ins{
-    background: url(./img/Vector2.svg) 0 0 no-repeat;
+    background: url(../img/Vector2.svg) 0 0 no-repeat;
 }
 
 .contacts-footer__item__w{
-    background: url(./img/Vector3.svg) 0 0 no-repeat;
+    background: url(../img/Vector3.svg) 0 0 no-repeat;
 }
 
 .block__button:hover{
@@ -528,7 +528,7 @@ h1{
     width:100%;
     height:100%;
     overflow:hidden;
-    background: url(./img/bac.png) 0 0 no-repeat;
+    background: url(../img/bac.png) 0 0 no-repeat;
 }
 .modal__dialog{
     max-width:700px;
