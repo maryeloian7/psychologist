@@ -17,7 +17,7 @@ function forms () {
 
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
-    modal = document.querySelector('.modal');
+          modal = document.querySelector('.modal');
 
 
     modalTrigger.forEach(btn => {

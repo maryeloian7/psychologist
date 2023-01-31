@@ -97,15 +97,23 @@ h1{
 
 .main__button{
     margin-top: 60px;
-    padding-left: 70px;
+    padding-left: 60px;
+}
+
+._main__button_bloc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__block__button{
+    width: 210px;
     border: 1px solid rgba(50, 53, 66, 0.7);
     background-color: rgba(28,28,28,0);
     border-radius: 17px ;
     min-height: 48px;
-    padding: 5px 50px;
+    padding: 5px 0;
     letter-spacing: 0.2px;
     font-weight: 200;
     font-size: 17px;
@@ -400,6 +408,10 @@ h1{
 
 }
 
+._serv_text{
+    margin-top: 30px;
+}
+
 .service_title{
     font-family: 'Viaoda Libre';
     font-style: normal;
@@ -434,6 +446,18 @@ h1{
     text-align: center;
     padding-top: 25px;
     color: #6B729A;
+}
+
+.service__button_bloc{
+
+}
+
+.service__button{
+ margin-top: 6px;
+}
+
+._button_one{
+    padding-bottom: 7px;
 }
 
 .service_text{
@@ -664,7 +688,9 @@ select:not([multiple]) {
         padding-top: 7px;
         font-size: 20px;
     }
-
+    .main-text {
+        align-items: center;
+    }
 }
 
 @media (max-width: 732px){
@@ -684,6 +710,10 @@ select:not([multiple]) {
         padding: 5px 40px;
         font-size: 15px;
         line-height: 15px;
+        width: 180px;
+    }
+    .main-text {
+        align-items: center;
     }
 
 }
@@ -697,14 +727,17 @@ select:not([multiple]) {
     }
     ._block__button{
         min-height: 50px;
-        padding: 5px 95px;
+        /* padding: 5px 95px; */
         font-size: 19px;
         line-height: 29px;
-
     }
     ._main__button{
         padding-left: 0px;
         margin-top: 30px;
+        align-items:center;
+    }
+    .main__block__button{
+        width: 280px;
     }
 }
 
@@ -781,8 +814,20 @@ select:not([multiple]) {
 
 
 }
+@media (max-width: 820px){
+    .main-block__container {
+        margin-bottom: 100px;
+    }
+}
 
-@media (max-width: 767px){
+
+@media (max-width: 769px){
+
+    .main__block__button {
+        min-width: 200px;
+    }
+
+
     .body_text , .why_me_title, .how_i_work_title, .cases_title, .service_title{
         font-size: 60px;
         line-height: 60px;
@@ -848,15 +893,23 @@ select:not([multiple]) {
         font-size: 20px;
     }
     .service_inform {
-        width: 220px;
-        height: 320px;
+        min-width: 220px;
+        min-height: 320px;
     }
+    .service_bloc {
+        min-height: 500px;
+    }
+    .body_bloc:not(:last-child) {
+        margin-right: 0px;
+    }
+
 }
 
 @media(max-width: 670px){
+
     .service_inform {
         width: 200px;
-        height: 300px;
+        min-height: 300px;
     }
     .body_inform{
         flex-wrap: wrap;
@@ -868,7 +921,13 @@ select:not([multiple]) {
     }
     .service_text {
         padding: 0 3px;
+        font-size: 14px;
     }
+
+    .service_title_inform {
+        font-size: 25px;
+    }
+
     .cases_item {
         width: 390px;
     }
@@ -986,8 +1045,8 @@ select:not([multiple]) {
         margin: 25px;
     }
     .service_inform {
-        width: 310px;
-        height: 280px;
+        min-width: 310px;
+        min-height: 324px;
     }
 
     .service_title_inform {
@@ -1005,8 +1064,11 @@ select:not([multiple]) {
         min-height: 45px;
         padding: 1px 65px;
         font-size: 16px;
-        margin-bottom: 5px;
+ 
         color: #323542;
+    }
+    .service__button_bloc {
+        padding-bottom: 5px;
     }
     .footer__contacts {
         flex-wrap: wrap;
