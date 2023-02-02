@@ -100,12 +100,12 @@ h1{
     padding-left: 60px;
 }
 
-._main__button_bloc{
+/* ._main__button_bloc{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .main__block__button{
     width: 210px;
@@ -449,20 +449,12 @@ h1{
 }
 
 
-.service__button{
- margin-top: 6px;
-}
-
-._button_one{
-    padding-bottom: 7px;
-}
-
 .service_text{
     font-size: 16px;
     line-height: 18px;
     text-align: center;
     color: #323542;
-}
+} 
 
 .service_price{
     font-size: 20px;
