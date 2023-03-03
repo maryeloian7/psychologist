@@ -1058,9 +1058,10 @@ select:not([multiple]) {
         height: 444px;
     }
     .how_i_work_text {
-        margin: 20px 10px 10px 20px;
-        font-size: 17px;
-        line-height: 20px;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
     }
     ._work_img2{
         flex-wrap: wrap;
