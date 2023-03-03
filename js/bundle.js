@@ -13,8 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 
-function forms () {
-
+function form () {
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
           modal = document.querySelector('.modal');
@@ -124,7 +123,7 @@ function forms () {
 
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (forms);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);
 
 /***/ }),
 
@@ -245,8 +244,8 @@ var __webpack_exports__ = {};
   !*** ./js/script.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs */ "./js/modules/tabs.js");
-/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/forms */ "./js/modules/forms.js");
+/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/forms */ "./js/modules/forms.js");
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/tabs */ "./js/modules/tabs.js");
 
 
 ;
@@ -254,8 +253,8 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_0__["default"])();
-    (0,_modules_forms__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_modules_forms__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 
 });

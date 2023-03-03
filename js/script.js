@@ -1,12 +1,12 @@
 "use strict"
 
-import tabs from "./modules/tabs";
-import forms from "./modules/forms";
+import form from "./modules/forms"
+import tabs from "./modules/tabs"
 
 window.addEventListener('DOMContentLoaded', function() {
 
     tabs();
-    forms();
+    form();
 
 
 });

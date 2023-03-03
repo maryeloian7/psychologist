@@ -1,6 +1,5 @@
 
-function forms () {
-
+function form () {
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
           modal = document.querySelector('.modal');
@@ -110,4 +109,4 @@ function forms () {
 
 }
 
-export default forms;
+export default form;
