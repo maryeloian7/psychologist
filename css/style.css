@@ -60,7 +60,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .main-img{
@@ -468,7 +468,7 @@ h1{
 }
 
 .service__button{
-    width: 240px;
+    /* width: 240px; */
     height: 60px;
     border-radius: 10px;
 }
@@ -708,7 +708,7 @@ select:not([multiple]) {
     }
 }
 
-@media (max-width: 732px){
+@media (max-width: 736px){
     .main-img{
         height: 400px;
     }
@@ -730,6 +730,10 @@ select:not([multiple]) {
     .main-text {
         align-items: center;
     }
+    .body_inform {
+        flex-wrap: wrap;
+        justify-content: center;
+        }
 
 }
 @media (max-width: 633px){
@@ -739,6 +743,7 @@ select:not([multiple]) {
     }
     .main-block{
         padding-top: 25px;
+        flex-wrap: wrap; 
     }
     ._block__button{
         min-height: 50px;
@@ -950,7 +955,6 @@ select:not([multiple]) {
         margin-right: 0px;
     }
     .body_bloc {
-        background: radial-gradient(circle at 50% 40%, rgba(230, 231, 234, 0.418), rgba(255, 255, 255, 0) 61.71%);
         width: 450px;
     }
 }
@@ -997,6 +1001,7 @@ select:not([multiple]) {
         padding-right: 0px;
         font-size: 50px;
         line-height: 50px;
+        padding-top: 150px;
     }
     .main-block__container {
         margin-bottom: 0px;
@@ -1019,12 +1024,15 @@ select:not([multiple]) {
     }
     .body_title {
         font-size: 30px;
+        line-height: 34px;
+    }
+    .body_title2 {
+        width: 300px;
     }
     .body_title_text {
         line-height: 19px;
     }
     .body_bloc {
-        background: radial-gradient(circle at 50% 40%, rgba(230, 231, 234, 0.418), rgba(255, 255, 255, 0) 61.71%);
         width: 450px;
     }
     .why_me_bloc {
@@ -1032,13 +1040,15 @@ select:not([multiple]) {
         justify-content: center;
     }
     .why_me_num {
-        font-size: 45px;
+        font-size: 28px;
     }
     .why_me_kind {
-        font-size: 24px;
+        font-size: 28px;
     }
     .why_me_text {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
     }
     .why_me_numbers:not(:last-child) {
         margin-right: 0px;
@@ -1058,7 +1068,6 @@ select:not([multiple]) {
         height: 444px;
     }
     .how_i_work_text {
-        font-weight: 200;
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
@@ -1110,16 +1119,21 @@ select:not([multiple]) {
     }
     .service_inform {
         min-width: 310px;
-        min-height: 324px;
+        min-height: 242px;
+    }
+
+    ._serv_text {
+        margin-top: 0px;
     }
 
     .service_title_inform {
-        font-size: 34px;
+        font-size: 28px;
+        line-height: 40px;
     }
     .service_text {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 20px;
-        padding: 0 7px;
+        padding: 0 39px;
     }
     .service_price{
         font-size: 15px;
@@ -1138,6 +1152,8 @@ select:not([multiple]) {
     }
     .contacts-footer__item {
         margin: 3px 25px;
+        font-size: 20px;
+        line-height: 24px;
     }
     .cases_cases{
         margin-bottom: 50px;
@@ -1182,5 +1198,16 @@ select:not([multiple]) {
     .service_text {
         font-size: 15px;
         line-height: 20px;
+    }
+}
+
+
+@media (max-width: 325px){
+    .body_title_text {
+        width: 315px;
+        line-height: 19px;
+    }
+    .why_me_text {
+        width: 315px;
     }
 }
