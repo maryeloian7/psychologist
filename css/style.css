@@ -207,7 +207,7 @@ h1{
 /* -------------------------------------------------- */
 
 .why_me{
-    max-height: 650px;
+    min-height: 650px;
     background: linear-gradient(to bottom,  #7A7B86 0.1%,#7A7B86 2%, rgba(245, 245, 220, 0.097) 10%);
 }
 
@@ -353,11 +353,10 @@ h1{
 
 .cases{
     background: linear-gradient(to bottom,  rgba(245, 245, 220, 0.281) 0.1%,#7A7B86 5%,#7A7B86 7%);
-    min-height: 840px;
+    min-height: 790px;
 }
 .cases_bloc{
-    display: flex;
-    margin-top: 40px;
+    margin: 40px 5px 0 5px;
 }
 
 .cases_title{
@@ -370,31 +369,31 @@ h1{
     color: #FFFFFF;
     padding-top: 70px;
 }
+
 .cases_item_tit{
-    margin-bottom: 30px;
+    margin: 30px 0 30px 0;
 }
 .cases_titles{
-    font-size: 27px;
+    font-size: 25px;
     line-height: 39px;
 }
-.cases_text{
-    width: 500px;
+.accordion__body{
     line-height: 19px;
     font-size: 14px;
     padding-right: 50px;
     color: #FFFFFF;
-}
-.cases_cases{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    width: 1000px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 0 0 60px;
 }
 .cases_item{
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 0 25px;
-    width: 650px;
-    height: 72px;
+    padding: 0 0 0 55px;
+    min-width: 1150px;
+    height:90px;
     font-size: 23px;
     line-height: 35px;
     align-items: center;
@@ -410,7 +409,7 @@ h1{
     width: 38px;
     height: 38px;
 }
-._item_active{
+.active, .cases_item:hover{
     background: rgba(255, 255, 255, 0.105);
 }
 
@@ -461,7 +460,7 @@ h1{
 
 .service_title_inform{
     font-family: 'Viaoda Libre';
-    font-size: 41px;
+    font-size: 45px;
     text-align: center;
     padding-top: 25px;
     color: #6B729A;
@@ -596,7 +595,7 @@ h1{
 }
 .modal__title{
     font-family: 'Viaoda Libre';
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
     text-align:center;
     text-transform:uppercase;
@@ -691,7 +690,29 @@ select:not([multiple]) {
 
 /* ------------------------------------------------------------- */
 
+@media (max-width: 1174px){
+    .cases_item{
+        padding: 0 0 0 40px;
+        min-width: 900px;
+    }
+    .accordion__body{
+        width: 900px;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0px 0 0 60px;
+    }
+    
+}
+
 @media (max-width: 974px){
+    .cases_item{
+        padding: 0 0 0 35px;
+        min-width: 800px;
+    }
+    .accordion__body{
+        width: 750px;
+        padding: 0px 0 0 60px;
+    }
     .main-img{
         height: 430px;
     }
@@ -708,7 +729,24 @@ select:not([multiple]) {
     }
 }
 
+@media (max-width: 974px){
+    .cases_item{
+        padding: 0 0 0 35px;
+        min-width: 750px;
+    }
+    .accordion__body{
+        width: 700px;
+        padding: 0px 0 0 60px;
+    }
+}
+
 @media (max-width: 736px){
+    .cases_item{
+        min-width: 650px;
+    }
+    .accordion__body{
+        width: 600px;
+    }
     .main-img{
         height: 400px;
     }
@@ -737,13 +775,30 @@ select:not([multiple]) {
 
 }
 @media (max-width: 633px){
+    .why_me_bloc{
+        flex-direction: column;
+        align-items:center;
+    }
+    .service_content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cases_item{
+        min-width: 550px;
+    }
+    .accordion__body{
+        width: 500px;
+    }
     .main-img{
         height: 400px;
         padding-bottom: 30px;
     }
     .main-block{
         padding-top: 25px;
-        flex-wrap: wrap; 
+        flex-direction: column;
+        align-items:center; 
     }
     ._block__button{
         min-height: 50px;
@@ -757,7 +812,7 @@ select:not([multiple]) {
         align-items:center;
     }
     .main__block__button{
-        width: 280px;
+        /* width: 280px; */
     }
 }
 
@@ -959,7 +1014,10 @@ select:not([multiple]) {
     }
 }
 
-@media (max-width: 479px){
+@media (max-width: 551px){
+    ._block__button {
+        min-width: 350px;
+    }
     .body_text , .why_me_title, .how_i_work_title, .cases_title, .service_title{
         padding-top: 120px;
         font-size: 50px;
@@ -1079,6 +1137,7 @@ select:not([multiple]) {
         font-family: 'Viaoda Libre';
         font-weight: 400;
         font-size: 28px;
+        width: 300px;
         line-height: 36px;
         text-align: center;
         color: #2A3563;
@@ -1168,7 +1227,8 @@ select:not([multiple]) {
     }
     .modal__title{
         font-size: 20px;
-       line-height: 30px;
+        line-height: 30px;
+        /* width:320px; */
     }
     .modal__input{
         width: 350px;
@@ -1189,6 +1249,34 @@ select:not([multiple]) {
         font-size: 17px;
 
     }
+    .cases_bloc{
+        margin: 10px 5px 0 5px;
+    }
+    .cases_title{
+        font-size: 50px 
+    }
+    .cases{
+        min-height: 730px;
+    }
+    .cases_item_tit{
+        margin: 10px 0 30px 0;
+        padding: 0px;
+    }
+    .cases_titles{
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .cases_item{
+        padding: 0 0 0 15px;
+        min-width: 310px;
+        font-size: 28px;
+        height: 80px;
+    }
+    .accordion__body{
+        width: 400px;
+        padding: 0px 0 0 20px;
+        padding-right: 20px;
+    }
 
 }
 @media (max-width: 375px){
@@ -1199,8 +1287,21 @@ select:not([multiple]) {
         font-size: 15px;
         line-height: 20px;
     }
+    ._block__button {
+        min-width: 300px;
+    }
 }
 
+@media (max-width: 376px){
+    .cases_item{
+        width: 260px;
+    }
+    .accordion__body{
+        width: 300px;
+        padding: 0px 0 0 20px;
+        padding-right: 20px;
+    }
+}
 
 @media (max-width: 325px){
     .body_title_text {
@@ -1209,5 +1310,23 @@ select:not([multiple]) {
     }
     .why_me_text {
         width: 315px;
+    }
+    .modal__dialog{
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    .modal__content{
+        width: 310px;
+        padding: 5px;
+    }
+    .modal__title{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .modal__input{
+        width: 270px;
+        height: 45px;
+        font-size: 14px;
+        margin: 15px auto 15px auto;
     }
 }
