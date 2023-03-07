@@ -1254,7 +1254,6 @@ select:not([multiple]) {
     }
     .cases_title{
         font-size: 50px;
-        padding-bottom:30px;
     }
     .cases{
         min-height: 730px;
@@ -1264,14 +1263,13 @@ select:not([multiple]) {
         padding: 0px;
     }
     .cases_titles{
-        padding-top: 5px;
         font-size: 18px;
         line-height: 17px;
     }
     .cases_item{
         padding: 0 0 0 15px;
         min-width: 310px;
-        font-size: 22px;
+        font-size: 28px;
         height: 80px;
     }
     .accordion__body{
