@@ -402,7 +402,7 @@ h1{
 }
 
 ._item{
-    border-top: 1px solid #FFFFFF;
+    border-top: .5px solid #FFFFFF;
 }
 .cross{
     padding-right: 20px;
@@ -1253,7 +1253,8 @@ select:not([multiple]) {
         margin: 10px 5px 0 5px;
     }
     .cases_title{
-        font-size: 50px 
+        font-size: 50px;
+        padding-bottom:30px;
     }
     .cases{
         min-height: 730px;
@@ -1263,13 +1264,14 @@ select:not([multiple]) {
         padding: 0px;
     }
     .cases_titles{
+        padding-top: 5px;
         font-size: 18px;
         line-height: 17px;
     }
     .cases_item{
         padding: 0 0 0 15px;
         min-width: 310px;
-        font-size: 28px;
+        font-size: 22px;
         height: 80px;
     }
     .accordion__body{
